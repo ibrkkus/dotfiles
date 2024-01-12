@@ -1,0 +1,53 @@
+{
+    "editor.fontFamily": "'Liberation Mono', 'monospace', monospace",
+    "editor.fontSize": 12,
+    "keyboard.dispatch": "keyCode",
+    // VIM
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.cursorStylePerMode.insert": "block-outline",
+    "vim.handleKeys": {
+        "<C-z>": false,
+        "<C-p>": false
+    },
+    "vim.leader": ",",
+    "vim.normalModeKeyBindings": [
+        {
+            "before":["<leader>","<space>"],
+            "commands": [
+                ":nohl",
+            ]
+        },
+    ],
+    // VIM ENDED
+    "editor.lineNumbers": "relative",
+    "search.showLineNumbers": true,
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "[javascript][typescript][typescriptreact][vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "window.zoomLevel": -0.4,
+    "editor.formatOnPaste": false, // required 
+    "editor.formatOnType": false, // required
+    "editor.formatOnSave": true, // optional 
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "css.customData": [
+        ".vscode/tailwind.json"
+    ],
+    "scss.lint.unknownAtRules": "ignore",
+    "css.lint.unknownAtRules": "ignore",
+    "security.workspace.trust.untrustedFiles": "open"
+}
